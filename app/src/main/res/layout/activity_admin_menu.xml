@@ -8,47 +8,48 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    tools:background="@drawable/background_image"
     tools:context="csc383.busstopbuddy.AdminMenuActivity">
 
     <Button
         android:id="@+id/trackBusButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="107dp"
         android:onClick="changeToBusTrack"
-        android:text="Track Bus" />
+        android:text="Track Bus"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/logoutButton"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="Manage Buses"
+        android:id="@+id/manageBusesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/manageBusesButton"
-        android:layout_marginLeft="182dp"
         android:layout_below="@+id/trackBusButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp" />
+        android:layout_marginLeft="182dp"
+        android:layout_marginTop="10dp"
+        android:text="Manage Buses" />
 
     <Button
         android:id="@+id/viewStudentInfoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="182dp"
-        android:text="View Student Info"
-        android:layout_above="@+id/emergencyNotificationButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="13dp" />
-
-    <Button
-        android:text="View Parent Info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/viewParentInfoButton"
-        android:layout_marginLeft="182dp"
         android:layout_below="@+id/manageBusesButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp" />
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="182dp"
+        android:text="View Student Info" />
+
+    <Button
+        android:id="@+id/viewParentInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewStudentInfoButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="182dp"
+        android:layout_marginTop="10dp"
+        android:text="View Parent Info" />
 
     <Button
         android:id="@+id/setDriverInfoButton"
@@ -57,7 +58,7 @@
         android:layout_below="@+id/viewParentInfoButton"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="182dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="10dp"
         android:text="Set Driver Info"
         android:textAlignment="center" />
 
@@ -65,37 +66,38 @@
         android:id="@+id/logoutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:text="Logout" />
+        android:text="Logout"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toEndOf="@+id/viewStudentInfoButton" />
 
     <Button
         android:id="@+id/emergencyNotificationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:text="Emergency Notification"
+        android:layout_below="@+id/setStudentCheckinButton"
         android:layout_centerHorizontal="true"
-        android:text="Emergency Notification" />
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/logoutButton"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/logoutButton"
         android:text="Bus Stop Buddy!"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="36sp" />
+        android:textSize="30sp"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/manageBusesButton" />
 
     <Button
         android:id="@+id/setStudentCheckinButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/viewStudentInfoButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="17dp"
-        android:text="Student Check-in" />
+        android:text="Student Check-in"
+        android:layout_below="@+id/setDriverInfoButton"
+        android:layout_alignEnd="@+id/viewParentInfoButton"
+        android:layout_marginTop="10dp" />
 
 </RelativeLayout>

@@ -32,6 +32,7 @@ public class StartingScreen extends AppCompatActivity {
         {
             Intent intent = new Intent(this, ParentMenuActivity.class);
             message =  "Hello Parent!";
+            Toast.makeText(StartingScreen.this, message, Toast.LENGTH_LONG).show();
             intent.putExtra(EXTRA_MESSAGE, message);
             startActivity(intent);
         }
@@ -39,10 +40,11 @@ public class StartingScreen extends AppCompatActivity {
         {
             Intent intent = new Intent(this, AdminMenuActivity.class);
             message = "Hello Admin!";
+            Toast.makeText(StartingScreen.this, message, Toast.LENGTH_LONG).show();
             intent.putExtra(EXTRA_MESSAGE, message);
             startActivity(intent);
         }
         else
-            Toast.makeText(StartingScreen.this, username, Toast.LENGTH_LONG).show();
+            Toast.makeText(StartingScreen.this, message, Toast.LENGTH_LONG).show();
     }
 }
