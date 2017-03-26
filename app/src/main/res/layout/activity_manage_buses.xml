@@ -11,14 +11,119 @@
     tools:layout_editor_absoluteY="25dp">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/logOutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_marginEnd="45dp"
         android:layout_marginTop="32dp"
-        android:text="Button"
+        android:onClick="logOutButton"
+        android:text="Log Out"
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="103dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/logOutButton"
+        android:layout_alignBottom="@+id/logOutButton"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/logOutButton"
+        android:text="Manage Buses"
+        android:textSize="28sp" />
+
+    <Spinner
+        android:id="@+id/routeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:entries="@array/route_arrays"
+        android:prompt="@string/route_prompt"
+        android:layout_below="@+id/logOutButton"
+        android:layout_alignEnd="@+id/textView10" />
+
+    <Button
+        android:id="@+id/updateFormButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:onClick="updateFormButton"
+        android:text="Update Form" />
+
+    <Button
+        android:id="@+id/addEntryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/routeSpinner"
+        android:layout_alignBottom="@+id/routeSpinner"
+        android:layout_alignEnd="@+id/logOutButton"
+        android:layout_marginEnd="21dp"
+        android:onClick="newRouteButton"
+        android:text="Add Entry" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Departure Time: "
+        android:layout_below="@+id/routeSpinner"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Estimated Route Time: "
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Number of Stops: "
+        android:layout_below="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/departureTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/addEntryButton"
+        android:layout_alignStart="@+id/addEntryButton"
+        android:layout_alignTop="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/estimatedRouteTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/departureTime"
+        android:layout_alignStart="@+id/departureTime"
+        android:layout_alignTop="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/numberOfStops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/estimatedRouteTime"
+        android:layout_alignStart="@+id/estimatedRouteTime"
+        android:layout_alignTop="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/stopsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/numberOfStops"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="19dp" />
+
 </RelativeLayout>

@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">BusStopBuddy</string>
     <string name="title_activity_bus_track">Map</string>
+    <string name="route_prompt">Choose a route</string>
+    <string-array name="route_arrays">
+        <item>Route 1</item>
+        <item>Route 2</item>
+    </string-array>
 </resources>
+

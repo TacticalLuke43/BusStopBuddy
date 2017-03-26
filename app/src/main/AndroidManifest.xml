@@ -50,7 +50,8 @@
         <activity android:name=".ViewParentInfo" />
         <activity android:name=".SetDriverInfo" />
         <activity android:name=".ViewDriverInfo" />
-        <activity android:name=".GetETA"></activity>
+        <activity android:name=".GetETA" />
+        <activity android:name=".NewRoute"></activity>
     </application>
 
 </manifest>
