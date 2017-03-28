@@ -8,4 +8,97 @@
     android:background="@drawable/background_image"
     tools:context="csc383.busstopbuddy.ViewStudentCheckIn">
 
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="42dp"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/logoutButton"
+        android:layout_marginStart="37dp"
+        android:layout_toStartOf="@+id/logoutButton"
+        android:text="View Student Check-in"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="30sp" />
+
+    <CheckedTextView
+        android:id="@+id/viewStudentCheck1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Andy"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView38"
+        android:layout_centerHorizontal="true" />
+
+    <CheckedTextView
+        android:id="@+id/viewStudentCheck2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewStudentCheck1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Randy"
+        android:gravity="center"
+
+        android:textSize="24sp" />
+
+    <CheckedTextView
+        android:id="@+id/viewStudentCheck3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/viewStudentCheck2"
+        android:layout_below="@+id/viewStudentCheck2"
+        android:layout_marginTop="16dp"
+        android:text="Sandy"
+        android:gravity="center"
+
+        android:textSize="24sp" />
+
+    <CheckedTextView
+        android:id="@+id/viewStudentCheck4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/viewStudentCheck3"
+        android:layout_below="@+id/viewStudentCheck3"
+        android:layout_marginTop="19dp"
+        android:text="Mandy"
+        android:gravity="center"
+
+        android:textSize="24sp" />
+
+    <CheckedTextView
+        android:id="@+id/viewStudentCheck5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/viewStudentCheck4"
+        android:layout_below="@+id/viewStudentCheck4"
+        android:layout_marginTop="16dp"
+        android:text="Candy"
+        android:gravity="center"
+
+        android:textSize="24sp" />
+
+    <CheckedTextView
+        android:id="@+id/viewStudentCheck6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/viewStudentCheck5"
+        android:layout_below="@+id/viewStudentCheck5"
+        android:layout_marginTop="19dp"
+        android:text="Dandy"
+        android:gravity="center"
+
+        android:textSize="24sp" />
+
 </RelativeLayout>
