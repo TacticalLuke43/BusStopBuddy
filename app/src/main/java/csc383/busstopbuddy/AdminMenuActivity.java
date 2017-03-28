@@ -5,10 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-
-import static android.R.id.message;
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class AdminMenuActivity extends AppCompatActivity {
 
@@ -20,8 +16,8 @@ public class AdminMenuActivity extends AppCompatActivity {
         // start of taylors intents
 
         Button logoutbtn = (Button)findViewById(R.id.logoutButton);
-        Button trackbusbtn = (Button)findViewById(R.id.trackBusButton);
-        Button managebusesbtn = (Button)findViewById(R.id.manageBusesButton);
+        Button trackbusbtn = (Button)findViewById(R.id.starttrackbtn);
+        Button managebusesbtn = (Button)findViewById(R.id.routebtn);
         Button viewstudentbtn = (Button)findViewById(R.id.viewStudentInfoButton);
         Button viewparentbtn = (Button)findViewById(R.id.viewParentInfoButton);
         Button setdriverbtn = (Button)findViewById(R.id.setDriverInfoButton);

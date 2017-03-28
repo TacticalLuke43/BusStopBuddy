@@ -6,5 +6,9 @@
         <item>Route 1</item>
         <item>Route 2</item>
     </string-array>
+    <string-array name="student_array">
+        <item>Jane Doe</item>
+        <item>John Doe</item>
+    </string-array>
 </resources>
 

@@ -12,7 +12,7 @@
     tools:context="csc383.busstopbuddy.ParentMenuActivity">
 
     <Button
-        android:id="@+id/trackBusButton"
+        android:id="@+id/starttrackbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/getETAButton"

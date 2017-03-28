@@ -17,7 +17,7 @@ public class ParentMenuActivity extends AppCompatActivity {
         //note absence notification doesnt need a activity
 
         Button logoutbtn = (Button)findViewById(R.id.logoutButton);
-        Button trackbusbtn = (Button)findViewById(R.id.trackBusButton);
+        Button trackbusbtn = (Button)findViewById(R.id.starttrackbtn);
         Button getetabtn = (Button)findViewById(R.id.getETAButton);
         Button setstudentbtn = (Button)findViewById(R.id.setStudentInfoButton);
         Button setparentbtn = (Button)findViewById(R.id.setParentInfoButton);

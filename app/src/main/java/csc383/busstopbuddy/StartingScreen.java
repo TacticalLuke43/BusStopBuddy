@@ -27,13 +27,14 @@ public class StartingScreen extends AppCompatActivity {
         String message = " ";
         String testParent = "parent";
         String testAdmin = "admin";
+        String testDriver = "driver";
 
         if (username.equals(testParent))
         {
             Intent intent = new Intent(this, ParentMenuActivity.class);
             message =  "Hello Parent!";
             Toast.makeText(StartingScreen.this, message, Toast.LENGTH_LONG).show();
-            intent.putExtra(EXTRA_MESSAGE, message);
+            //intent.putExtra(EXTRA_MESSAGE, message);
             startActivity(intent);
         }
         else if (username.equals(testAdmin))
@@ -41,7 +42,15 @@ public class StartingScreen extends AppCompatActivity {
             Intent intent = new Intent(this, AdminMenuActivity.class);
             message = "Hello Admin!";
             Toast.makeText(StartingScreen.this, message, Toast.LENGTH_LONG).show();
-            intent.putExtra(EXTRA_MESSAGE, message);
+            //intent.putExtra(EXTRA_MESSAGE, message);
+            startActivity(intent);
+        }
+        else if (username.equals(testDriver))
+        {
+            Intent intent = new Intent(this, AdminMenuActivity.class);
+            message = "Hello Driver!";
+            Toast.makeText(StartingScreen.this, message, Toast.LENGTH_LONG).show();
+            //intent.putExtra(EXTRA_MESSAGE, message);
             startActivity(intent);
         }
         else

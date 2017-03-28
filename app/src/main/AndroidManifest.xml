@@ -39,6 +39,8 @@
             android:name=".BusTrackActivity"
             android:label="@string/title_activity_bus_track" />
         <activity android:name=".ParentMenuActivity" />
+        <activity android:name=".DriverMain" />
+        <activity android:name=".AbsenceNotification" />
         <activity android:name=".test" />
         <activity android:name=".ManageBuses" />
         <activity android:name=".EmergencyNotification" />

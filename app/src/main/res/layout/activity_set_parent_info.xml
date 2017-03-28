@@ -2,10 +2,114 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_set_parent_info"
+    android:id="@+id/activity_set_driver_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_image"
-    tools:context="csc383.busstopbuddy.SetParentInfo">
+    tools:context="csc383.busstopbuddy.SetDriverInfo">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/LogoutButton"
+        android:layout_alignBottom="@+id/LogoutButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="51dp"
+        android:text="Submit"
+        android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
+        android:layout_marginStart="19dp"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_alignStart="@+id/button5"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:id="@+id/LogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        android:text="Clear Form"
+        android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/button5"
+        android:layout_marginEnd="58dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:layout_below="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/editText5"
+        android:layout_alignStart="@+id/editText5" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText4"
+        android:layout_alignStart="@+id/textView14"
+        android:text="Edit Parent:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/editText4"
+        android:layout_alignBottom="@+id/editText4"
+        android:layout_toStartOf="@+id/editText4"
+        android:layout_marginEnd="13dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number: "
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/editText5"
+        android:layout_alignBottom="@+id/editText5"
+        android:layout_alignEnd="@+id/LogoutButton"
+        android:layout_marginEnd="23dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Child's Name"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/editText6"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_alignStart="@+id/textView15" />
 
 </RelativeLayout>

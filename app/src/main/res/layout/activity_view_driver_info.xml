@@ -8,4 +8,75 @@
     android:background="@drawable/background_image"
     tools:context="csc383.busstopbuddy.ViewDriverInfo">
 
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="62dp"
+        android:text="View Driver Info" />
+
+    <Button
+        android:id="@+id/LogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/textView12"
+        android:text="Logout" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:entries="@array/route_arrays"
+        android:layout_below="@+id/LogoutButton"
+        android:layout_alignEnd="@+id/Update" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginTop="58dp"
+        android:text="Driver's Name: " />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/LogoutButton"
+        android:layout_alignTop="@+id/textView33"
+        android:layout_toEndOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView33"
+        android:layout_centerVertical="true"
+        android:text="Phone Number:" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView34"
+        android:layout_alignStart="@+id/textView34"
+        android:layout_alignTop="@+id/textView35" />
+
+    <Button
+        android:id="@+id/Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:text="Update" />
+
 </RelativeLayout>
