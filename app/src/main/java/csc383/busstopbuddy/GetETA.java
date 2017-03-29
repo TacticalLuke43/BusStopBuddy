@@ -12,7 +12,6 @@ public class GetETA extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_et);
-        Button submitbtn = (Button) findViewById(R.id.submitbtn);
         Button LogoutButton = (Button) findViewById(R.id.logoutButton);
 
         LogoutButton.setOnClickListener(new View.OnClickListener() {
@@ -20,11 +19,7 @@ public class GetETA extends AppCompatActivity {
                 startActivity(new Intent(GetETA.this, StartingScreen.class));
             }
         });
-        submitbtn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(GetETA.this, BusTrackActivity.class));
-            }
-        });
+
     }
 
 }

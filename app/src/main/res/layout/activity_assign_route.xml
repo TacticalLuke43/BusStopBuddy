@@ -20,7 +20,7 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/logOutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:entries="@array/route_arrays"
-        android:layout_below="@+id/button7"
+        android:layout_below="@+id/logOutButton"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

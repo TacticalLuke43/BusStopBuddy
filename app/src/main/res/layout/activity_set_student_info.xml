@@ -25,11 +25,12 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout"
-        android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
         android:layout_alignBaseline="@+id/textView17"
         android:layout_alignBottom="@+id/textView17"
-        android:layout_alignStart="@+id/button5" />
+        android:layout_alignStart="@+id/button5"
+        android:onClick="logOutButton"
+        android:text="Logout"
+        android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color" />
 
     <EditText
         android:id="@+id/editText4"

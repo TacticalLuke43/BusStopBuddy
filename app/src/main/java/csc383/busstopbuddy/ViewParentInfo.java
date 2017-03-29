@@ -12,7 +12,7 @@ public class ViewParentInfo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_driver_info);
+        setContentView(R.layout.activity_view_parent_info);
 
     }
     public void logOutButton(View view) {

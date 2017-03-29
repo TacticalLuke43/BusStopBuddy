@@ -37,8 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/routebtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="182dp"
+        android:layout_marginTop="10dp"
+        android:onClick="changeToStudentInfo"
         android:text="View Student Info" />
 
     <Button
@@ -49,6 +50,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="182dp"
         android:layout_marginTop="10dp"
+        android:onClick="changeToParentInfo"
         android:text="View Parent Info" />
 
     <Button

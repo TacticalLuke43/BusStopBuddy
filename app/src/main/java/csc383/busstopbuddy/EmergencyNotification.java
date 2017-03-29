@@ -14,6 +14,11 @@ public class EmergencyNotification extends AppCompatActivity {
         setContentView(R.layout.activity_emergency_notification);
     }
 
+    public void logOutButton(View view) {
+        Intent intent = new Intent(this, StartingScreen.class);
+        startActivity(intent);
+    }
+
     public void sendNotification(View view) {
         Intent intent = new Intent(this, AdminMenuActivity.class);
         String message = "Emergency Notification Sent!";

@@ -20,13 +20,14 @@
         android:textSize="18sp" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/logOutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginStart="21dp"
         android:layout_marginTop="30dp"
         android:layout_toEndOf="@+id/textView39"
+        android:onClick="logOutButton"
         android:text="Logout" />
 
     <Button

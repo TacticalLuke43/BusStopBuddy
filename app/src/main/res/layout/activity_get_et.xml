@@ -24,23 +24,22 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bus Stop Buddy!"
+        android:text="Get ETA"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="30sp"
         android:layout_alignBottom="@+id/logoutButton"
-        android:layout_toStartOf="@+id/logoutButton"
-        android:layout_marginEnd="20dp" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="57dp" />
 
     <EditText
         android:id="@+id/addressbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView6"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="12dp"
         android:ems="10"
         android:inputType="textPostalAddress"
-        android:text="Enter Address" />
+        android:text="Enter Address"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView6" />
 
     <Button
         android:id="@+id/submitbtn"
@@ -50,15 +49,13 @@
         android:layout_alignTop="@+id/addressbox"
         android:text="Submit" />
 
-    <EditText
-        android:id="@+id/timerbox"
+    <TextClock
+        android:id="@+id/textClock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/submitbtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="75dp"
-        android:ems="10"
-        android:inputType="time"
-        android:text="ETA Timer" />
+        android:layout_marginTop="102dp"
+        android:textSize="24sp" />
 
 </RelativeLayout>

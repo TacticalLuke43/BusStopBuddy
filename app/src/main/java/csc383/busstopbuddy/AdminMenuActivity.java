@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewParent;
 import android.widget.Button;
 
 public class AdminMenuActivity extends AppCompatActivity {
@@ -45,20 +46,20 @@ public class AdminMenuActivity extends AppCompatActivity {
                 startActivity(new Intent(AdminMenuActivity.this, ManageBuses.class));
             }
         });
-        viewstudentbtn.setOnClickListener(new View.OnClickListener()
+        /*viewstudentbtn.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                startActivity(new Intent(AdminMenuActivity.this, ViewStudentInfo.class));
+                //startActivity(new Intent(AdminMenuActivity.this, ViewStudentInfo.class));
             }
         });
         viewparentbtn.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                startActivity(new Intent(AdminMenuActivity.this, ViewParentInfo.class));
+                //startActivity(new Intent(AdminMenuActivity.this, ViewParentInfo.class));
             }
-        });
+        });*/
         setdriverbtn.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
@@ -95,19 +96,19 @@ public class AdminMenuActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BusTrackActivity.class);
         startActivity(intent);
     }
-    */
-    /*public void changeToManageBus(View view) {
+
+    public void changeToManageBus(View view) {
         Intent intent = new Intent(this, ManageBusActivity.class);
         startActivity(intent);
-    }
+    }*/
     public void changeToStudentInfo(View view) {
-        Intent intent = new Intent(this, StudentInfoActivity.class);
+        Intent intent = new Intent(AdminMenuActivity.this, ViewStudentInfo.class);
         startActivity(intent);
     }
     public void changeToParentInfo(View view) {
-        Intent intent = new Intent(this, ParentInfoActivity.class);
+        Intent intent = new Intent(AdminMenuActivity.this, ViewParentInfo.class);
         startActivity(intent);
-    }
+    }/*
     public void changeToDriverInfo(View view) {
         Intent intent = new Intent(this, DriverInfoActivity.class);
         startActivity(intent);

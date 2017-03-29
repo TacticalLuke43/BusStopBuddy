@@ -1,5 +1,6 @@
 package csc383.busstopbuddy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,11 @@ public class SetStudentInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_student_info);
+    }
+
+    public void logOutButton(View view) {
+        Intent intent = new Intent(this, StartingScreen.class);
+        startActivity(intent);
     }
 
     public void submitButton(View view) {

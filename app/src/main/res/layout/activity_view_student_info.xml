@@ -12,10 +12,11 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout"
         android:layout_alignBottom="@+id/spinner"
+        android:layout_marginBottom="37dp"
         android:layout_toEndOf="@+id/button4"
-        android:layout_marginBottom="37dp" />
+        android:onClick="logOutButton"
+        android:text="Logout" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -30,17 +31,18 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="49dp"
-        android:text="Button"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:onClick="Update"
+        android:text="Update" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
-        android:text="Address:"
+        android:text="Address: "
         android:layout_below="@+id/spinner"
         android:layout_toStartOf="@+id/spinner"
         android:layout_marginEnd="19dp" />
@@ -50,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Phone Number"
+        android:text="Phone Number: "
         android:layout_below="@+id/textView18"
         android:layout_alignStart="@+id/textView18" />
 
@@ -78,7 +80,7 @@
         android:layout_alignStart="@+id/textView19"
         android:layout_below="@+id/textView19"
         android:layout_marginTop="21dp"
-        android:text="Route #:" />
+        android:text="Route #: " />
 
     <TextView
         android:id="@+id/SRouteNum"
