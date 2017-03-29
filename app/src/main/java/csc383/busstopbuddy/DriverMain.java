@@ -11,7 +11,7 @@ public class DriverMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_menu);
+        setContentView(R.layout.activity_driver_main);
 
         // start of dans intents
 
