@@ -26,9 +26,9 @@
         android:layout_alignTop="@+id/logoutButton"
         android:layout_marginStart="37dp"
         android:layout_toStartOf="@+id/logoutButton"
-        android:text="View Student Check-in"
+        android:text="Student Check-Ins"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 
     <CheckedTextView
         android:id="@+id/viewStudentCheck1"

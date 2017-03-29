@@ -21,6 +21,7 @@ public class ParentMenuActivity extends AppCompatActivity {
         Button getetabtn = (Button)findViewById(R.id.getETAButton);
         Button setstudentbtn = (Button)findViewById(R.id.setStudentInfoButton);
         Button setparentbtn = (Button)findViewById(R.id.setParentInfoButton);
+        Button absencebtn = (Button)findViewById(R.id.AbsenceNotifyButton);
         Button viewdriverbtn = (Button)findViewById(R.id.viewDriverInfoButton);
         Button viewstudentcheckinbtn = (Button)findViewById(R.id.viewStudentCheckButton);
 
@@ -57,6 +58,13 @@ public class ParentMenuActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 startActivity(new Intent(ParentMenuActivity.this, SetParentInfo.class));
+            }
+        });
+        absencebtn.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                startActivity(new Intent(ParentMenuActivity.this, AbsenceNotification.class));
             }
         });
         viewdriverbtn.setOnClickListener(new View.OnClickListener()

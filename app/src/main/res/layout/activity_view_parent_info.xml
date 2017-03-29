@@ -55,7 +55,7 @@
         android:text="Phone Number:" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/ParentName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView30"
@@ -63,13 +63,13 @@
         android:layout_toEndOf="@+id/textView12" />
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/ParentNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView30"
         android:layout_alignBottom="@+id/textView30"
         android:layout_alignEnd="@+id/LogoutButton"
-        android:layout_alignStart="@+id/textView31" />
+        android:layout_alignStart="@+id/ParentName" />
 
     <Button
         android:id="@+id/button6"

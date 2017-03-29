@@ -47,7 +47,11 @@ public class StartingScreen extends AppCompatActivity {
         }
         else if (username.equals(testDriver))
         {
-            Intent intent = new Intent(this, AdminMenuActivity.class);
+<<<<<<< HEAD
+            Intent intent = new Intent(this, DriverMain.class);
+=======
+            Intent intent = new Intent(StartingScreen.this, DriverMain.class);
+>>>>>>> f1183664a58a226e94379c448427e96ff3a1a40c
             message = "Hello Driver!";
             Toast.makeText(StartingScreen.this, message, Toast.LENGTH_LONG).show();
             //intent.putExtra(EXTRA_MESSAGE, message);
