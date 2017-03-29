@@ -41,7 +41,7 @@
         <activity android:name=".ParentMenuActivity" />
         <activity android:name=".DriverMain" />
         <activity android:name=".AbsenceNotification" />
-        <activity android:name=".test" />
+        <activity android:name=".test1" />
         <activity android:name=".ManageBuses" />
         <activity android:name=".EmergencyNotification" />
         <activity android:name=".StudentCheckIn" />
@@ -54,12 +54,7 @@
         <activity android:name=".ViewDriverInfo" />
         <activity android:name=".GetETA" />
         <activity android:name=".NewRoute" />
-<<<<<<< HEAD
-        <activity android:name=".SetRoute" />
         <activity android:name=".AssignRoute"></activity>
-=======
-        <activity android:name=".SetRoute"></activity>
->>>>>>> origin/master
     </application>
 
 </manifest>
