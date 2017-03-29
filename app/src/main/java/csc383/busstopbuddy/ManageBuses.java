@@ -44,8 +44,7 @@ public class ManageBuses extends AppCompatActivity {
             TextView estimateTime = (TextView) findViewById(R.id.estimatedRouteTime);
             estimateTime.setText("10 Minutes");
             TextView numberOfStops = (TextView) findViewById(R.id.numberOfStops);
-            numberOfStops
-                    .setText("1");
+            numberOfStops.setText("1");
             TextView stopsList = (TextView) findViewById(R.id.stopsTextView);
             stopsList.setText("Stop 1: 542 Leeroy Street");
         }

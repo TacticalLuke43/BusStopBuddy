@@ -13,10 +13,11 @@
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/LogoutButton"
-        android:layout_alignBottom="@+id/LogoutButton"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="51dp"
+        android:layout_below="@+id/editText"
+        android:layout_marginEnd="66dp"
+        android:layout_marginTop="36dp"
+        android:onClick="submitButton"
         android:text="Submit"
         android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color" />
 
@@ -29,17 +30,6 @@
         android:layout_alignBaseline="@+id/textView17"
         android:layout_alignBottom="@+id/textView17"
         android:layout_alignStart="@+id/button5" />
-
-    <Button
-        android:id="@+id/LogoutButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="59dp"
-        android:text="Clear Form"
-        android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/button2"
-        android:layout_marginEnd="57dp" />
 
     <EditText
         android:id="@+id/editText4"

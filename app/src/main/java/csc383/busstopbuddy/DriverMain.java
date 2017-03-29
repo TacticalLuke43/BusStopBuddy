@@ -16,7 +16,6 @@ public class DriverMain extends AppCompatActivity {
         // start of dans intents
 
         Button logoutbtn = (Button) findViewById(R.id.logoutButton);
-        Button starttrackbtn = (Button) findViewById(R.id.starttrackbtn);
         Button routebtn = (Button) findViewById(R.id.routebtn);
         Button viewstudentbtn = (Button) findViewById(R.id.viewStudentInfoButton);
         Button viewparentbtn = (Button) findViewById(R.id.viewParentInfoButton);
@@ -29,14 +28,9 @@ public class DriverMain extends AppCompatActivity {
                 startActivity(new Intent(DriverMain.this, StartingScreen.class));
             }
         });
-        starttrackbtn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(DriverMain.this, BusTrackActivity.class));
-            }
-        });
         routebtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(DriverMain.this, ManageBuses.class));
+                startActivity(new Intent(DriverMain.this, AssignRoute.class));
             }
         });
         viewstudentbtn.setOnClickListener(new View.OnClickListener() {

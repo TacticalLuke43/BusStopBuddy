@@ -12,24 +12,14 @@
     tools:context="csc383.busstopbuddy.AdminMenuActivity">
 
     <Button
-        android:id="@+id/starttrackbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/logoutButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:onClick="changeToBusTrack"
-        android:text="Start Tracking Bus" />
-
-    <Button
         android:id="@+id/routebtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/starttrackbtn"
-        android:layout_centerHorizontal="true"
         android:layout_marginLeft="182dp"
-        android:layout_marginTop="10dp"
-        android:text="Set Bus Route" />
+        android:layout_marginTop="30dp"
+        android:text="Set Bus Route"
+        android:layout_below="@+id/logoutButton"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/viewStudentInfoButton"

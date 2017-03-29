@@ -11,17 +11,6 @@
     tools:background="@drawable/background_image"
     tools:context="csc383.busstopbuddy.AdminMenuActivity">
 
-    <TextView
-        android:id="@+id/namebox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/logoutButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="134dp"
-        android:text="Enter Student Name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="30sp" />
-
     <Button
         android:id="@+id/logoutButton"
         android:layout_width="wrap_content"
@@ -45,10 +34,11 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/namebox"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:text="Absent" />
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="182dp"
+        android:text="Absent"
+        android:layout_below="@+id/logoutButton"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/sendbtn"
@@ -58,5 +48,16 @@
         android:layout_below="@+id/checkBox"
         android:layout_marginTop="50dp"
         android:text="Send" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Student's Name" />
 
 </RelativeLayout>

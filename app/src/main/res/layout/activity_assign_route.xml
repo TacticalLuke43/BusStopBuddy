@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_emergency_notification"
+    android:id="@+id/activity_assign_route"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_image"
-    tools:context="csc383.busstopbuddy.EmergencyNotification">
+    tools:context="csc383.busstopbuddy.AssignRoute">
 
     <TextView
         android:id="@+id/textView39"
@@ -16,8 +16,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="51dp"
         android:layout_marginTop="42dp"
-        android:text="Emergency Notification"
-        android:textSize="18sp" />
+        android:text="Tracking Menu"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button7"
@@ -36,17 +36,16 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="139dp"
-        android:onClick="sendNotification"
-        android:text="Send Notification" />
+        android:onClick="trackingButton"
+        android:text="Start Tracking" />
 
-    <EditText
-        android:id="@+id/notificationBox"
+    <Spinner
+        android:id="@+id/spinner3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/trackingButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="114dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter Message Here" />
+        android:layout_marginTop="48dp"
+        android:entries="@array/route_arrays"
+        android:layout_below="@+id/button7"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

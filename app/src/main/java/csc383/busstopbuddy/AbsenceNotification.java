@@ -23,12 +23,6 @@ public class AbsenceNotification extends AppCompatActivity {
                 startActivity(new Intent(AbsenceNotification.this, StartingScreen.class));
             }
         });
-        sendbtn.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v)
-            {
-                startActivity(new Intent(AbsenceNotification.this, ViewStudentInfo.class));
-            }
-        });
+
     }
 }

@@ -12,10 +12,10 @@
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/LogoutButton"
-        android:layout_alignBottom="@+id/LogoutButton"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp"
+        android:onClick="submitButton"
         android:text="Submit"
         android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color" />
 
@@ -25,21 +25,9 @@
         android:layout_height="wrap_content"
         android:text="Logout"
         android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
-        android:layout_marginStart="19dp"
+        android:layout_marginStart="250dp"
         android:layout_alignTop="@+id/editText3"
-        android:layout_alignStart="@+id/button5"
         android:layout_marginTop="27dp" />
-
-    <Button
-        android:id="@+id/LogoutButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="57dp"
-        android:text="Clear Form"
-        android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/button5"
-        android:layout_marginEnd="58dp" />
 
     <EditText
         android:id="@+id/editText4"
@@ -59,17 +47,18 @@
         android:ems="10"
         android:inputType="textPostalAddress"
         android:layout_below="@+id/editText4"
-        android:layout_alignStart="@+id/editText4" />
+        android:layout_alignEnd="@+id/editText4"
+        android:layout_toEndOf="@+id/textView15" />
 
     <EditText
         android:id="@+id/editText6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
         android:ems="10"
         android:inputType="number"
-        android:layout_below="@+id/editText5"
-        android:layout_alignStart="@+id/editText5" />
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/editText5"
+        android:layout_toEndOf="@+id/textView16" />
 
     <TextView
         android:id="@+id/textView13"
@@ -99,8 +88,7 @@
         android:textSize="18sp"
         android:layout_alignBaseline="@+id/editText5"
         android:layout_alignBottom="@+id/editText5"
-        android:layout_alignEnd="@+id/LogoutButton"
-        android:layout_marginEnd="23dp" />
+        android:layout_alignStart="@+id/textView14" />
 
     <TextView
         android:id="@+id/textView16"

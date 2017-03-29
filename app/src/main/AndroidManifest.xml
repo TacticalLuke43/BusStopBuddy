@@ -54,7 +54,8 @@
         <activity android:name=".ViewDriverInfo" />
         <activity android:name=".GetETA" />
         <activity android:name=".NewRoute" />
-        <activity android:name=".SetRoute"></activity>
+        <activity android:name=".SetRoute" />
+        <activity android:name=".AssignRoute"></activity>
     </application>
 
 </manifest>

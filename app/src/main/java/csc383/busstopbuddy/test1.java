@@ -3,7 +3,7 @@ package csc383.busstopbuddy;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class test extends AppCompatActivity {
+public class test1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
