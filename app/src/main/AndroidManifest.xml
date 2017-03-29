@@ -54,8 +54,12 @@
         <activity android:name=".ViewDriverInfo" />
         <activity android:name=".GetETA" />
         <activity android:name=".NewRoute" />
+<<<<<<< HEAD
         <activity android:name=".SetRoute" />
         <activity android:name=".AssignRoute"></activity>
+=======
+        <activity android:name=".SetRoute"></activity>
+>>>>>>> origin/master
     </application>
 
 </manifest>
